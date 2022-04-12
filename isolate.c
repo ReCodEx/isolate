@@ -734,6 +734,7 @@ void BringupInterface(const char *name) {
   CHECK_CALL(ioctl(fd, SIOCGIFINDEX, &ifr));
 
   // Enable the interface
+  CHECK_CALL(ioctl(fd, SIOCGIFFLAGS, &ifr));
   ifr.ifr_flags |= IFF_UP;
   CHECK_CALL(ioctl(fd, SIOCSIFFLAGS, &ifr));
 
