@@ -1,7 +1,7 @@
 %define name isolate
 %define version 1.8.3
-%define unmangled_version 14c63a207d98f16b471b939a6813889731931253
-%define release 1
+%define unmangled_version 8d62c0e84ead86d0103790d57d2a4922158db856
+%define release 2
 # %define boxdir %{_sharedstatedir}/%{name}
 %define boxdir /var/local/lib/%{name}
 %define confdir %{_sysconfdir}/%{name}
