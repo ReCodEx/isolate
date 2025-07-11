@@ -721,7 +721,9 @@ setup_orig_credentials(void)
     exit(EXIT_FAILURE);                                       \
   }
 
-void BringupInterface(const char *name) {
+static void
+BringupInterface(const char *name)
+{
   int fd;
 
   struct ifreq ifr;
